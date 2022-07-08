@@ -1,0 +1,12 @@
+plugins {
+  id "com.google.protobuf"
+  id "com.android.library"
+}
+
+android {
+  defaultConfig {
+    compileSdkVersion 26
+    minSdkVersion 26
+    targetSdkVersion 31
+  }
+}

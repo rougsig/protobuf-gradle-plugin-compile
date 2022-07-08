@@ -1,0 +1,40 @@
+pluginManagement {
+  repositories {
+    gradlePluginPortal()
+    mavenCentral()
+    google()
+  }
+}
+
+plugins {
+  id "com.gradle.enterprise" version "3.10.2"
+}
+
+dependencyResolutionManagement {
+  repositories {
+    mavenCentral()
+    google()
+  }
+}
+
+gradleEnterprise {
+  buildScan {
+    termsOfServiceUrl = "https://gradle.com/terms-of-service"
+    termsOfServiceAgree = "yes"
+  }
+}
+
+include(
+    ":lib-core",
+
+    ":pure-kotlin",
+    ":pure-java",
+
+    ":proto-kotlin",
+    ":proto-java",
+
+    ":pure-android",
+    ":proto-android",
+
+    ":work-with-proto"
+)

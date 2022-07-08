@@ -1,0 +1,8 @@
+plugins {
+  id "com.google.protobuf"
+  id "org.jetbrains.kotlin.jvm"
+}
+
+dependencies {
+  api project(":lib-core")
+}
